@@ -1,0 +1,17 @@
+{
+  "description": "Permite configuração de hotkeys para Youtube",
+  "manifest_version": 2,
+  "name": "YT Hotkeys",
+  "version": "0.0.1a",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["hotkey.js"]
+    }
+  ]
+
+}
